@@ -47,7 +47,7 @@ def close_settings():
 
 def check_for_updates():
     try:
-        response = requests.get("https://raw.githubusercontent.com/krwg/JustKeep/refs/heads/master/version.txt", timeout=5)
+        response = requests.get("https://raw.githubusercontent.com/krwg/JKeep/refs/heads/main/version.txt", timeout=5)
         response.raise_for_status()
         latest_version = response.text.strip()
 
